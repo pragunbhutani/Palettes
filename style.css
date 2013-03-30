@@ -1,3 +1,16 @@
+/* @font-face	{
+	font-family: ostrich-light;
+	src: url('fonts/ostrich-light-webfont.ttf'),
+		 url('fonts/ostrich-light-webfont.eot');
+
+	font-family: ostrich-regular;
+	src: url('fonts/ostrich-regular-webfont.ttf'),
+		 url('fonts/ostrich-regular-webfont.eot');
+
+	font-family: junction;
+	src: url('fonts/junction-regular.otf');
+} */
+
 body 	{
 	width: 100%;
 	height: auto;
@@ -12,7 +25,7 @@ body 	{
 #header	{
 	width: 90%;
 	height: 100px;
-	background-color: transparent;
+	background-color: rgba(0,0,0,0);
 	position: absolute;
 	top:0;
 	left: 5%;
@@ -22,7 +35,7 @@ body 	{
 
 #header h1 	{
 	font-family: 'Abril Fatface';
-	color: rgb(0,0,0);
+	color: rgb(50,50,50);
 	font-size: 3.7em;
 	position: relative;
 	top: -10px;
@@ -35,8 +48,67 @@ body 	{
 	font-family: sans-serif;
 	width: 90%;
 	left: 5%;
-	top: 150px;
+	top: 100px;
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: lighter;
+}
+
+#input-container	{
+	background-color: rgba(0,0,0,0);
+	padding: 20px 0 10px 0;
+}
+
+#input-container p 	{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0px 0 10px 0;
+}
+
+#imageURL	{
+	width: 450px;
+	height: 20px;
+	margin-left: 0;
+}
+
+#urlSubmit	{
+	height: 26px;
+	width: 90px;
+	margin-left: -5px;
+	padding: 0;
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+	font-size: 12px;
+	color: #fff;
+}
+
+#urlSubmit:hover 	{
+	background-color: rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
+#image-bg	{
+	border: 1px solid black;
+	height: 350px;
+	width: 500px;
+	border-radius: 5px;
+	margin: 30px 0 0 50px;
+	float: left;
+}
+
+#image-bg img 	{
+	height: 330px;
+	width: 480px;
+	margin-top: 10px;
+}
+
+#palette-container	{
+	background-color: rgba(0,0,0,0);
+	border: 1px dashed;
+	height: 350px;
+	width: 500px;
+	border-radius: 5px;
+	margin: 30px 60px 0 0;
+	float: right;
 }
