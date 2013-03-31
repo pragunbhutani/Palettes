@@ -22,7 +22,10 @@ function insertImage()	{
 
 	console.log(myImage);
 
-	paletteArray = createPalette(myImage, 5);
+	$(window).load(function() {
+		paletteArray = createPalette(myImage, 5);
+	});
 
-	console.log(paletteArray);
+	console.log(paletteArray[0]);
+
 };
