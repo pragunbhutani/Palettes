@@ -20,10 +20,6 @@ function insertImage()	{
 
 		console.log(myImage);
 
-<<<<<<< HEAD
-	$(document).load(function() {
-=======
->>>>>>> Moved function calls inside 'bind'
 		paletteArray = createPalette(myImage, 5);
 		console.log(paletteArray[0]);
 	});
