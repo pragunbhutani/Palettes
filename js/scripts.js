@@ -13,18 +13,19 @@ function insertImage()	{
 	
 	$('#userImg').bind("load", function() {
 		$(this).fadeIn('slow');
-	});
 
+		//passing image to color thief and getting palette
+		var myImage = $('#userImg');
+		var paletteArray = new Array();
 
-	//passing image to color thief and getting palette
-	var myImage = $('#userImg');
-	var paletteArray = new Array();
+		console.log(myImage);
 
-	console.log(myImage);
-
+<<<<<<< HEAD
 	$(document).load(function() {
+=======
+>>>>>>> Moved function calls inside 'bind'
 		paletteArray = createPalette(myImage, 5);
 		console.log(paletteArray[0]);
 	});
-
+	
 };
