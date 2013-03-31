@@ -18,6 +18,11 @@ function insertImage()	{
 
 	//passing image to color thief and getting palette
 	var myImage = $('#userImg');
+	var paletteArray = new Array();
+
 	console.log(myImage);
 
+	paletteArray = createPalette(myImage, 5);
+
+	console.log(paletteArray);
 };
