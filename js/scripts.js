@@ -1,3 +1,7 @@
+function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+};
+
 function insertImage()	{
 
 	//replacing the HTML content inside the image div and adding the image + border
@@ -36,6 +40,9 @@ function insertImage()	{
 			console.log(colorValue);
 			$(this).css("background-color", colorValue);
 			$(this).fadeIn("slow");
+
+			var hexColor = rgbToHex(paletteArray[count][0], paletteArray[count][1], paletteArray[count][2]);
+			$(this > div).html("<p color='" + hexColor + "'>" + hexColor + "</p>");
 		});
 
 	});

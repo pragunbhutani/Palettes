@@ -158,7 +158,15 @@ body 	{
 }
 
 .hex-code	{
-	height: 50px;
-	width: 50px;
+	position: relative;
+	height: 34px;
+	width: 80px;
+	left: 6px;
+	top: 290px;
 	background-color: white;
+}
+
+.hex-code p {
+	font-size: 24px;
+	font-family: 'Lato', sans-serif;
 }
