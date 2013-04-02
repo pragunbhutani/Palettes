@@ -50,7 +50,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$('.swatch-box').mouse(function() {
+	$('.swatch-box').mouseleave(function() {
 		$('.swatch-box').animate({
 			opacity:'1'
 		});
