@@ -29,7 +29,13 @@ function insertImage()	{
 
 		console.log(myImage);
 
-		paletteArray = createPalette(myImage, 5);
+		try	{
+			paletteArray = createPalette(myImage, 5);
+		}
+		catch ()	{
+			console.log("Error caught");
+		}
+
 
 		$('#palette-container').fadeIn("fast", function() {
 			$(this).css("border", "1px solid");
