@@ -44,11 +44,15 @@ function insertImage()	{
 
 $(document).ready(function() {
 
-	$('.swatch-box').hover(function() {
-		$(this).animate({
-			height:'340px',
-			width:'100px',
-			zIndex:'1000'
+	$('.swatch-box').mouseenter(function() {
+		$('.swatch-box').not(this).animate({
+			opacity:'0.5'
+		});
+	});
+
+	$('.swatch-box').mouse(function() {
+		$('.swatch-box').animate({
+			opacity:'1'
 		});
 	});
 
