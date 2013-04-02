@@ -24,8 +24,8 @@ function insertImage()	{
 		
 		$(".swatch").hide();
 		
-		$('.swatch').each(function(var count=0) {
-			$(this).css("background-color", "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count++][2] + ")");
+		$('.swatch').each(function(count) {
+			$(this).css("background-color", "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")");
 		});
 
 		$(".swatch").fadeIn("slow");
