@@ -35,6 +35,9 @@ function insertImage()	{
 		catch (err)	{
 			console.log("Error caught");
 			console.log(err);
+			$('#image-container').fadeOut("slow");
+			$('#palette-container').fadeOut("slow");
+			return false;
 		};
 
 
