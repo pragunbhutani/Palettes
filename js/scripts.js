@@ -37,14 +37,14 @@ function insertImage()	{
 		
 		$('.swatch-box').each(function(count) {
 			var colorValue = "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")";
-			console.log(colorValue);
+		
 			$(this).css("background-color", colorValue);
 			$(this).fadeIn("slow");
 
 			var hexColor = rgbToHex(paletteArray[count][0], paletteArray[count][1], paletteArray[count][2]);
-
 			var hexArea = "<div class='hex-code'><p color='" + hexColor + "'>" + hexColor + "</p></div>";
-			console.log(hexArea);
+
+			$(this).html(hexArea);
 		});
 
 	});
