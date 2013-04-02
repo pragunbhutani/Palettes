@@ -10,7 +10,9 @@ function insertImage()	{
 	$('#userImg').hide();
 	$(".swatch-box").hide();
 
-	$("#image-container").fadeIn("fast");
+	$("#image-container").fadeIn("fast", function() {
+		$(this).css("border", "1px solid");
+	});
 	$('#image-bg').fadeIn('fast');
 	
 	$('#userImg').bind("load", function() {
