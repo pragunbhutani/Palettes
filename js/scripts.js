@@ -45,12 +45,17 @@ function insertImage()	{
 $(document).ready(function() {
 
 	$('.swatch-box').mouseenter(function() {
-		$('.swatch-box').not(this).animate({
+		
+		$('.swatch-box').animate({
 			opacity:'0.5'
 		}, 100);
+
+		$(this).animate({
+			opacity:'1'
+		},100);
 	});
 
-	$('.swatch-box').mouseleave(function() {
+	$('#palette-container').mouseleave(function() {
 		$('.swatch-box').animate({
 			opacity:'1'
 		}, 100);
