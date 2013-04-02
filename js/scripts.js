@@ -31,7 +31,7 @@ function insertImage()	{
 			var colorValue = "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")";
 			console.log(colorValue);
 			$(this).css("background-color", colorValue);
-			$(this).fadeIn("fast");
+			$(this).fadeIn("slow");
 		});
 
 	});
