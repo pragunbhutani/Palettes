@@ -48,7 +48,7 @@ $(document).ready(function() {
 		
 		$('.swatch-box').animate({
 			opacity:'0.5'
-		}, 10);
+		}, 200);
 
 		$(this).animate({
 			opacity:'1'
