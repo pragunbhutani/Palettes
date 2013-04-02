@@ -156,3 +156,9 @@ body 	{
 	background-color: #fff;
 	float: left;
 }
+
+.hex-code	{
+	height: 50px;
+	width: 50px;
+	background-color: white;
+}

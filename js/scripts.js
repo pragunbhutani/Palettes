@@ -42,32 +42,32 @@ function insertImage()	{
 	
 };
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$('#palette-container').mouseenter(function() {
+// 	$('#palette-container').mouseenter(function() {
 		
-		$('.swatch-box').animate({
-			opacity:'0.5'
-		}, 200);
+// 		$('.swatch-box').animate({
+// 			opacity:'0.5'
+// 		}, 200);
 
-	});
+// 	});
 
-	$('#palette-container').mouseleave(function() {
-		$('.swatch-box').animate({
-			opacity:'1'
-		}, 200);
-	});
+// 	$('#palette-container').mouseleave(function() {
+// 		$('.swatch-box').animate({
+// 			opacity:'1'
+// 		}, 200);
+// 	});
 
-	$('.swatch-box').mouseenter(function() {
-		$(this).animate({
-			opacity:'1'
-		}, 100);
-	});
+// 	$('.swatch-box').mouseenter(function() {
+// 		$(this).animate({
+// 			opacity:'1'
+// 		}, 100);
+// 	});
 
-	$('.swatch-box').mouseleave(function() {
-		$(this).animate({
-			opacity:'0.5'
-		}, 100);
-	});
+// 	$('.swatch-box').mouseleave(function() {
+// 		$(this).animate({
+// 			opacity:'0.5'
+// 		}, 100);
+// 	});
 
-});
+// });
