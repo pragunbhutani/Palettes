@@ -32,9 +32,10 @@ function insertImage()	{
 		try	{
 			paletteArray = createPalette(myImage, 5);
 		}
-		catch ()	{
+		catch (err)	{
 			console.log("Error caught");
-		}
+			console.log(err);
+		};
 
 
 		$('#palette-container').fadeIn("fast", function() {
