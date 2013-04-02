@@ -4,6 +4,12 @@ function rgbToHex(r, g, b) {
 
 function insertImage()	{
 
+	if($("#error-text"))	{
+		$("#error-text").fadeOut("fast", function() {
+			$("#error-text").remove();
+		});
+	}
+
 	//replacing the HTML content inside the image div and adding the image + border
 	var newHTML = "<div id='image-bg'><img id='userImg' src='" + document.getElementById('imageURL').value + "' /></div>";
 	document.getElementById('image-container').innerHTML = newHTML;
@@ -35,8 +41,12 @@ function insertImage()	{
 		catch (err)	{
 			console.log("Error caught");
 			console.log(err);
-			$('#image-container').fadeOut("slow");
-			$('#palette-container').fadeOut("slow");
+			$('#image-container').fadeOut("fast");
+			$('#palette-container').fadeOut("fast");
+			$('<canvas>').fadeOut('fast');
+
+			$('#container').append('<p id="error-text">Error Text</p>');
+
 			return false;
 		};
 
