@@ -25,7 +25,7 @@ function insertImage()	{
 		$(".swatch").hide();
 		
 		$('.swatch').each(function(count) {
-			var colorValue = "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")"
+			var colorValue = "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")";
 			console.log(colorValue);
 			$(this).css("background-color", colorValue);
 		});
