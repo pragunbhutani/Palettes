@@ -8,7 +8,6 @@ function insertImage()	{
 	// fading-in the image upon completion of load
 	$('#image-bg').hide();	
 	$('#userImg').hide();
-	$("#palette-container").hide();
 	$(".swatch-box").hide();
 
 	$('#image-bg').fadeIn('fast');
@@ -24,7 +23,9 @@ function insertImage()	{
 
 		paletteArray = createPalette(myImage, 5);
 
-		$('#palette-container').fadeIn("fast");
+		$('#palette-container').fadeIn("fast", function() {
+			$(this).css("border", "1px solid");
+		});
 		
 		$('.swatch-box').each(function(count) {
 			var colorValue = "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count][2] + ")";
