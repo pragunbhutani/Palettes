@@ -5,10 +5,8 @@ function rgbToHex(r, g, b) {
 function insertImage()	{
 
 	if($("#error-text"))	{
-		$("#error-text").fadeOut("fast", function() {
-			$("#error-text").remove();
-		});
-	}
+		$("#error-text").remove();
+	};
 
 	//replacing the HTML content inside the image div and adding the image + border
 	var newHTML = "<div id='image-bg'><img id='userImg' src='" + document.getElementById('imageURL').value + "' /></div>";
@@ -43,9 +41,9 @@ function insertImage()	{
 			console.log(err);
 			$('#image-container').fadeOut("fast");
 			$('#palette-container').fadeOut("fast");
-			$('<canvas>').fadeOut('fast');
+			$("canvas").fadeOut('fast');
 
-			$('#container').append('<p id="error-text">Error Text</p>');
+			$('#container').append('<p id="error-text">Because HTML5 Canvas dislikes Cross Origin Data so much, I am unable to work with it at this moment.</p>');
 
 			return false;
 		};
