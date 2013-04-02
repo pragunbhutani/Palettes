@@ -21,7 +21,14 @@ function insertImage()	{
 		console.log(myImage);
 
 		paletteArray = createPalette(myImage, 5);
-		console.log(paletteArray[0]);
+		
+		$(".swatch").hide();
+		
+		$('.swatch').each(function(var count=0) {
+			$(this).css("background-color", "rgb(" + paletteArray[count][0] + ", " + paletteArray[count][1] + ", " + paletteArray[count++][2] + ")");
+		});
+
+		$(".swatch").fadeIn("slow");
 	});
 	
 };
