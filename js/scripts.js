@@ -47,13 +47,13 @@ $(document).ready(function() {
 	$('.swatch-box').mouseenter(function() {
 		$('.swatch-box').not(this).animate({
 			opacity:'0.5'
-		}, 50);
+		}, 100);
 	});
 
 	$('.swatch-box').mouseleave(function() {
 		$('.swatch-box').animate({
 			opacity:'1'
-		}, 50);
+		}, 100);
 	});
 
 });
