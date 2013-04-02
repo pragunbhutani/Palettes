@@ -48,17 +48,17 @@ $(document).ready(function() {
 		
 		$('.swatch-box').animate({
 			opacity:'0.5'
-		}, 100);
+		}, 10);
 
 		$(this).animate({
 			opacity:'1'
-		},100);
+		},10);
 	});
 
 	$('#palette-container').mouseleave(function() {
 		$('.swatch-box').animate({
 			opacity:'1'
-		}, 100);
+		}, 200);
 	});
 
 });
