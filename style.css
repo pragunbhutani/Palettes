@@ -119,6 +119,9 @@ body 	{
 	width: 500px;
 	display: inline-block;
 	margin-top: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+	display: none;
 }
 
 #image-bg	{
