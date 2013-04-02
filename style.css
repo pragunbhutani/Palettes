@@ -119,14 +119,15 @@ body 	{
 	width: 500px;
 	display: inline-block;
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
 #image-bg	{
-	border: 1px solid black;
 	height: 350px;
 	width: 500px;
 	border-radius: 5px;
 	background: url('img/loading.gif') no-repeat center;
+	float: left;
 }
 
 #image-bg img 	{
@@ -138,18 +139,36 @@ body 	{
 #palette-container	{
 	background-color: rgba(0,0,0,0);
 	height: 350px;
-	width: 500px;
+	width: 490px;
 	border-radius: 5px;
 	display: inline-block;
-	padding:0;
+	padding-left:10px;
 	margin-left: 30px;
 	margin-top: 20px;
 }
 
 .swatch-box	{
-	height: 350px;
-	width: 100px;
+	height: 330px;
+	width: 92px;
+	margin-top: 10px;
+	margin-right: 5px;
 	display: inline-block;
 	background-color: #fff;
 	float: left;
+}
+
+.hex-code	{
+	position: relative;
+	height: 34px;
+	width: 80px;
+	left: 6px;
+	top: 290px;
+	background-color: white;
+}
+
+.hex-code span {
+	font-size: 16px;
+	line-height: 24px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
 }
