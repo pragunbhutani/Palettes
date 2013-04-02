@@ -44,7 +44,7 @@ function insertImage()	{
 
 $(document).ready(function() {
 
-	$('swatch-box').hover(function() {
+	$('.swatch-box').hover(function() {
 		$(this).animate({
 			height:'340px',
 			width:'100px',
