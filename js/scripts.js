@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$(this).animate({
 			height:'340px',
 			width:'100px',
-			z-index:'1000'
+			zIndex:'1000'
 		});
 	});
 
