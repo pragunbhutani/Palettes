@@ -44,21 +44,30 @@ function insertImage()	{
 
 $(document).ready(function() {
 
-	$('.swatch-box').mouseenter(function() {
+	$('#palette-container').mouseenter(function() {
 		
 		$('.swatch-box').animate({
 			opacity:'0.5'
 		}, 200);
 
-		$(this).animate({
-			opacity:'1'
-		},10);
 	});
 
 	$('#palette-container').mouseleave(function() {
 		$('.swatch-box').animate({
 			opacity:'1'
 		}, 200);
+	});
+
+	$('.swatch-box').mouseenter(function() {
+		$(this).animate({
+			opacity:'1'
+		}, 100);
+	});
+
+	$('.swatch-box').mouseleave(function() {
+		$(this).animate({
+			opacity:'0.5'
+		}, 100);
 	});
 
 });
