@@ -127,6 +127,7 @@ body 	{
 	width: 500px;
 	border-radius: 5px;
 	background: url('img/loading.gif') no-repeat center;
+	display: inline-block;
 }
 
 #image-bg img 	{
@@ -141,7 +142,7 @@ body 	{
 	width: 500px;
 	border-radius: 5px;
 	display: inline-block;
-	padding:0;
+	padding-left:10px;
 	margin-left: 30px;
 	margin-top: 20px;
 	border: 1px solid black;
@@ -149,8 +150,8 @@ body 	{
 
 .swatch-box	{
 	height: 330px;
-	width: 100px;
-	margin-top: 20px;
+	width: 96px;
+	margin-top: 10px;
 	display: inline-block;
 	background-color: #fff;
 	float: left;
