@@ -42,7 +42,7 @@ function insertImage()	{
 			$(this).fadeIn("slow");
 
 			var hexColor = rgbToHex(paletteArray[count][0], paletteArray[count][1], paletteArray[count][2]);
-			var hexArea = "<div class='hex-code'><p color='" + hexColor + "'>" + hexColor + "</p></div>";
+			var hexArea = "<div class='hex-code'><span style='color:" + hexColor + ";'>" + hexColor + "</span></div>";
 
 			$(this).html(hexArea);
 		});
