@@ -147,8 +147,9 @@ body 	{
 }
 
 .swatch-box	{
-	height: 350px;
+	height: 330px;
 	width: 100px;
+	margin-top: 20px;
 	display: inline-block;
 	background-color: #fff;
 	float: left;
