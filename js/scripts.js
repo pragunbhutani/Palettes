@@ -13,6 +13,7 @@ function insertImage()	{
 	$("#image-container").fadeIn("fast", function() {
 		$(this).css("border", "1px solid");
 	});
+
 	$('#image-bg').fadeIn('fast');
 	
 	$('#userImg').bind("load", function() {
@@ -40,3 +41,15 @@ function insertImage()	{
 	});
 	
 };
+
+$(document).ready(function() {
+
+	$('swatch-box').hover(function() {
+		$(this).animate({
+			height:'340px',
+			width:'100px',
+			z-index:'1000'
+		});
+	});
+
+});
