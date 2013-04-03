@@ -4,8 +4,20 @@ function rgbToHex(r, g, b) {
 
 function insertImage()	{
 
+	if($("#error-container"))	{
+		$("#error-container").empty();
+		$("#error-container").remove();
+	};
+
+	var image_url = document.getElementById('imageURL').value;
+
+	if (!image_url.match(/^[a-zA-Z]+:\/\//))
+	{
+	   image_url = 'http://' + image_url;
+	}
+
 	//replacing the HTML content inside the image div and adding the image + border
-	var newHTML = "<div id='image-bg'><img id='userImg' src='" + document.getElementById('imageURL').value + "' /></div>";
+	var newHTML = "<div id='image-bg'><img id='userImg' src='" + image_url + "' /></div>";
 	document.getElementById('image-container').innerHTML = newHTML;
 	
 	
@@ -29,7 +41,24 @@ function insertImage()	{
 
 		console.log(myImage);
 
-		paletteArray = createPalette(myImage, 5);
+		try	{
+			paletteArray = createPalette(myImage, 5);
+		}
+		catch (err)	{
+			console.log("Error caught");
+			console.log(err);
+			$('#image-container').fadeOut("fast");
+			$('#palette-container').fadeOut("fast");
+			$("canvas").fadeOut('fast');
+
+			$('#container').append('<div id="error-container"></div>');
+			$('#error-container').append('<p>Because HTML5 Canvas dislikes Cross Origin Data, I am unable to work with images from external sources currently.</p>');
+			$('#error-container').append('<p>Please try one of the images that I have uploaded to my repo for testing:');
+			$('#error-container').append('<ul><li>blotmandroid.github.com/Palettes/img/lake.jpg</li><li>blotmandroid.github.com/Palettes/img/tree.jpg</li><li>blotmandroid.github.com/Palettes/img/car.jpg</li><li>blotmandroid.github.com/Palettes/img/sunset.jpg</li><li>blotmandroid.github.com/Palettes/img/island.png</li></ul>');
+
+			return false;
+		};
+
 
 		$('#palette-container').fadeIn("fast", function() {
 			$(this).css("border", "1px solid");

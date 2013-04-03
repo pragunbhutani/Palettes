@@ -172,3 +172,20 @@ body 	{
 	vertical-align: middle;
 	font-family: 'Lato', sans-serif;
 }
+
+#error-container	{
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px;
+	top: 30px;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+
+#error-container ul	{
+	list-style-type: none;
+	line-height: 28px;
+}
