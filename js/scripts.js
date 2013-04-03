@@ -45,7 +45,7 @@ function insertImage()	{
 			$("canvas").fadeOut('fast');
 
 			$('#container').append('<div id="error-container"></div>');
-			$('#error-container').append('<p>Because HTML5 Canvas dislikes Cross Origin Data, I am unable to work with images from other sources currently.</p>');
+			$('#error-container').append('<p>Because HTML5 Canvas dislikes Cross Origin Data, I am unable to work with images from external sources currently.</p>');
 			$('#error-container').append('<p>Please try one of the images that I have uploaded to my repo for testing:');
 			$('#error-container').append('<ul><li>blotmandroid.github.com/Palettes/img/lake.jpg</li><li>blotmandroid.github.com/Palettes/img/tree.jpg</li><li>blotmandroid.github.com/Palettes/img/car.jpg</li><li>blotmandroid.github.com/Palettes/img/sunset.jpg</li><li>blotmandroid.github.com/Palettes/img/island.png</li></ul>');
 
