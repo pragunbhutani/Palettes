@@ -4,8 +4,9 @@ function rgbToHex(r, g, b) {
 
 function insertImage()	{
 
-	if($("#error-text"))	{
-		$("#error-text").remove();
+	if($("#error-container"))	{
+		$("#error-container").empty();
+		$("#error-container").remove();
 	};
 
 	//replacing the HTML content inside the image div and adding the image + border
@@ -43,7 +44,20 @@ function insertImage()	{
 			$('#palette-container').fadeOut("fast");
 			$("canvas").fadeOut('fast');
 
-			$('#container').append('<p id="error-text">Because HTML5 Canvas dislikes Cross Origin Data so much, I am unable to work with it at this moment.</p>');
+			$('#container').append('<div class="error-container"></div>', function() {
+				$('#error-container').fadeIn("slow");
+			});
+			$('#error-container').append('<p>Because HTML5 Canvas dislikes Cross Origin Data, I am unable to work with images from other sources currently.</p>');
+			$('#error-container').append('<p>Please try one of the images that I have uploaded to my repo for testing:');
+			$('#error-container').append(
+				'<ul>
+				<li>blotmandroid.github.com/Palettes/img/lake.jpg</li>
+				<li>blotmandroid.github.com/Palettes/img/tree.jpg</li>
+				<li>blotmandroid.github.com/Palettes/img/car.jpg</li>
+				<li>blotmandroid.github.com/Palettes/img/sunset.jpg</li>
+				<li>blotmandroid.github.com/Palettes/img/island.png</li>
+				</ul>');
+
 
 			return false;
 		};
