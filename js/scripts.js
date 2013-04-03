@@ -10,7 +10,7 @@ function insertImage()	{
 	};
 
 	//replacing the HTML content inside the image div and adding the image + border
-	var newHTML = "<div id='image-bg'><img id='userImg' src='" + document.getElementById('imageURL').value + "' /></div>";
+	var newHTML = "<div id='image-bg'><img id='userImg' src='http://" + document.getElementById('imageURL').value + "' /></div>";
 	document.getElementById('image-container').innerHTML = newHTML;
 	
 	
