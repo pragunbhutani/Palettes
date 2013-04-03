@@ -9,8 +9,15 @@ function insertImage()	{
 		$("#error-container").remove();
 	};
 
+	var image_url = document.getElementById('imageURL').value;
+
+	if (!image_url.match(/^[a-zA-Z]+:\/\//))
+	{
+	   image_url = 'http://' + image_url;
+	}
+
 	//replacing the HTML content inside the image div and adding the image + border
-	var newHTML = "<div id='image-bg'><img id='userImg' src='http://" + document.getElementById('imageURL').value + "' /></div>";
+	var newHTML = "<div id='image-bg'><img id='userImg' src='" + image_url + "' /></div>";
 	document.getElementById('image-container').innerHTML = newHTML;
 	
 	
